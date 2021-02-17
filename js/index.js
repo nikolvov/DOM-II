@@ -8,6 +8,7 @@ let navItems = document.querySelector('.nav-link')
 let destination = document.querySelector('.destination')
 let button = document.querySelector('.btn')
 let contDest = document.querySelector('.content-destination')
+let contP = document.querySelector('.content-pick')
 
 header.addEventListener('mouseover', event => {
     header.style.backgroundColor = 'orange'
@@ -27,6 +28,9 @@ destination.addEventListener('mouseleave', event => {
 adventure.addEventListener('mouseenter', (event) => {
     adventure.style.transform = 'scale(1.2)';
     adventure.style.transition = 'transform 1s';
+})
+contP.addEventListener('contextmenu', event => {
+    contP.style.backgroundColor = 'green'
 })
 adventure.addEventListener('drag', (event) => {
     adventure.style.transform = 'scale(1)';
