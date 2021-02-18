@@ -10,8 +10,9 @@ let button = document.querySelector('.btn')
 let contDest = document.querySelector('.content-destination')
 let contP = document.querySelector('.content-pick')
 
-header.addEventListener('mouseover', event => {
+header.addEventListener('click', event => {
     header.style.backgroundColor = 'orange'
+    event.stopPropagation();
 })
 header.addEventListener('click', event => {
     header.style.backgroundColor = 'green'
